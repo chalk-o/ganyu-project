@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Ganyu: Plenilune Gaze</title>
+
+        <!--meta tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta description="Ganyu-themed website.">
+        <meta author="chalk-o#5945">
+        <link rel="stylesheet" href="default.css" type="text/css">
+        <link rel="favicon" href="./favicon_io (1)/favicon.ico" type="image/x-icon">
+
+    </head>
+    <body>
+
+        <!--Live wallpaper-->
+        <div id="top-section"></div>
+         <video autoplay loop class="ganyu-video">
+            <source src="ganyu-wallpaper.webm" type="video/mp4">
+         </video>
+        </div>
+
+         <!--Ganyu text-->
+        <div id="ganyu-text">
+            <img src="ganyu-text2.png" alt="fix your browser lmao">
+        </div>
+
+        <div id="author">
+            <button onclick= "myFunction()" id="discord-tag">chalk#5945</button>
+        </div>
+        <input value="chalk#5945" type="text" id="copy">
+
+        <!--scripts and stuff-->
+        <script> 
+            function myFunction() {
+                var copyText = document.getElementById("copy");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999);
+                document.execCommand("copy");
+            }
+        </script>
+        <script>
+            let root = document.documentElement;
+            let hotjarGraphic = document.getElementByClassName("ganyu-video");
+            
+            hotjarGraphic.addEventListener("mousemove", e => {
+              console.log(e);
+              root.style.setProperty('--mouse-x', e.pageX - hotjarGraphic.offsetLeft + "px");
+              root.style.setProperty('--mouse-y', e.pageY - hotjarGraphic.offsetTop + "px");
+            });
+        </script>
+    </body>
+</html>
