@@ -4,7 +4,6 @@
 body {
     margin: 0;
     padding: 0; 
-    overflow: hidden
 }
 
 video.ganyu-video {
@@ -34,7 +33,7 @@ div#ganyu-text {
 div#ganyu-text img {
     width:455px;
     height: 180px;
-    opacity: 50%;
+    opacity: 70%;
 }
 
 div#author {
@@ -50,7 +49,7 @@ div#author {
     font-family: zen loop;
     letter-spacing: 5px;
     font-size: 20px;
-    color:#82b8ff;
+    color:#000000;
     font-weight: bold;
     border-style: groove;
     border-width: 3px;
@@ -80,3 +79,33 @@ div#author {
 #copy {
     opacity: 0;
 }
+
+div#menu {
+    z-index: 10;
+    position: relative;
+    text-align: right;
+    padding-right: 15px;
+}
+
+#uid {
+    z-index: 3;
+    position: fixed;
+    text-align: right;
+    color: #ffffff;
+    font-family: chewy;
+    font-weight: normal;
+    bottom: 0;
+    text-align: right;
+    padding-left: 90%;
+    font-size: 20px;
+    opacity: 70%;
+}
+
+/*
+div#menu button {
+    background-color: transparent;
+    border-style: none;
+    opacity: 50%;
+    
+} 
+*/
