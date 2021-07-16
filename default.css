@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 body {
     margin: 0;
@@ -37,7 +38,7 @@ div#ganyu-text img {
 }
 
 div#author {
-    z-index: 3;
+    z-index: 5;
     position: fixed;
     width: 100%;
     top: 65%;
@@ -45,7 +46,7 @@ div#author {
 }
 
 #discord-tag {
-    z-index: 3;
+    z-index: 5;
     font-family: zen loop;
     letter-spacing: 5px;
     font-size: 20px;
@@ -68,7 +69,7 @@ div#author {
     background-color: #82b8ff;
     transition-duration: all 0.1s;
     transition: 300ms ease-in-out;
-    transform-origin: left;
+
 }
 
 #discord-tag:active {
@@ -90,15 +91,82 @@ div#menu {
 #uid {
     z-index: 3;
     position: fixed;
-    text-align: right;
     color: #ffffff;
     font-family: chewy;
     font-weight: normal;
     bottom: 0;
-    text-align: right;
     padding-left: 90%;
     font-size: 20px;
     opacity: 70%;
+}
+
+#subsites {
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+}
+
+#subsites ul {
+    list-style: none;
+    text-align: right;
+    padding-top: 10px;
+}
+
+#subsites li {
+    display: inline;
+    color: white;
+    opacity: 100%;
+    font-family: prata;
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+#subsites li:last-child {
+    padding-right: 5%;
+}
+
+#social-media {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+#social-media ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#social-media li {
+    display: inline;
+    padding-left: 5px;
+}
+
+#social-media li:first-child {
+    padding-left: 0;
+}
+
+#social-media li img {
+    width: 50px;
+    opacity: 70%;
+}
+
+#social-media li img:hover {
+    opacity: 100%;
+    transition-duration: 0.5s;
+}
+
+#subsites a:active, a:visited, a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 1s;
+
+}
+
+#subsites a:hover {
+    font-size: 25px;
+    transition: 1s;
 }
 
 /*
