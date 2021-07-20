@@ -169,10 +169,6 @@ div#menu {
     transition: 1s;
 }
 
-#audio {
-    position: fixed;
-}
-
 /*
 div#menu button {
     background-color: transparent;
