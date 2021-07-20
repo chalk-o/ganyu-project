@@ -26,10 +26,14 @@
         </div>
 
         <!--AUDIO-->
-        <audio autoplay loop>
+
+        <iframe 
+            src="./site/silence.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+        </iframe> 
+
+        <audio autoplay muted loop id="AudioPlay">
             <source src="./site/track.mp3">
         </audio>
-
 
          <!--GANYU TEXT-->
         <div id="ganyu-text">
